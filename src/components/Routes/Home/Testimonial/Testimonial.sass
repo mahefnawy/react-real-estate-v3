@@ -1,0 +1,62 @@
+
+.testimonials
+  margin: 50px auto
+  height: 400px
+  width: 100%
+  margin-top: 80px
+  position: relative
+  h1
+    &::before
+      content: "TESTIMONIALS"
+      font-size: 1.5em
+    &::after
+      top: 80%
+  .testimonials-carousel
+    width: 80%
+    text-align: center
+    transform: translateY(10%)
+    height: 100%
+    margin: auto
+
+    .testimonials-each
+      background-color: #222222
+      margin: auto
+
+      height: 80%
+      padding: 50px 10px
+      border-radius: 40px 0 40px 40px
+      //box-shadow: 6px 6px 30px 0px rgba(0,0,0,0.2)
+      &::after
+        content: "TESTIMONIALS"
+        position: absolute
+        opacity: 0.05
+        font-size: 3em
+        color: #fff
+        z-index: 20
+        bottom: 0
+        right: 10%
+        font-weight: 800
+      img
+        height: 80px
+        width: auto
+        display: inline-block
+      .testimonials-each-text
+        display: inline-block
+        //transform: translateY(-30%)
+        text-align: left
+        margin: auto
+        width: 60%
+        padding-left: 20px
+        color: #CDA036
+        p
+          color: #fff
+@media (max-width: 900px)
+  .testimonials
+    h1
+      &::before
+        display: none
+    .testimonials-carousel
+      .testimonials-each
+        .testimonials-each-text
+          text-align: center
+          width: 90%

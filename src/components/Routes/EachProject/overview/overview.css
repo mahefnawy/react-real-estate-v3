@@ -1,0 +1,9 @@
+.overview {
+  background-color: #222222;
+  text-align: center; }
+  .overview .description {
+    padding: 50px 0; }
+    .overview .description p {
+      color: #fff; }
+
+/*# sourceMappingURL=overview.css.map */

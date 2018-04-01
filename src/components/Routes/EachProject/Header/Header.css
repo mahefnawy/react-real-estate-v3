@@ -1,0 +1,164 @@
+.header {
+  position: relative;
+  height: 100vh !important;
+  width: 100%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .header.cayan-107 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522403490/projects/cayan-107/header-image.jpg"); }
+  .header.cayan-15 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522410755/projects/cayan-15/header.jpg"); }
+  .header.cayan-11 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411097/projects/cayan-11/header.jpg"); }
+  .header.cayan-101 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411230/projects/cayan-101/header.jpg"); }
+  .header.cayan-100 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411446/projects/cayan-100/header.jpg"); }
+  .header.cayan-128 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411614/projects/cayan-128/header.jpg"); }
+  .header.cayan-139 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411734/projects/cayan-139/header.jpg"); }
+  .header.cayan-106 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522411929/projects/cayan-106/header.jpg"); }
+  .header.cayan-115 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412053/projects/cayan-115/header.jpg"); }
+  .header.cayan-112 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412197/projects/cayan-112/header.jpg"); }
+  .header.cayan-138 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412328/projects/cayan-138/header.jpg"); }
+  .header.cayan-127 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412486/projects/cayan-127/header.jpg"); }
+  .header.cayan-132 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412599/projects/cayan-132/header.jpg"); }
+  .header.cayan-103 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412802/projects/cayan-103/header.jpg"); }
+  .header.cayan-97 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522412889/projects/cayan-97/header.jpg"); }
+  .header.cayan-41 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522413017/projects/cayan-41/header.jpg"); }
+  .header.cayan-4 {
+    background-image: url("https://res.cloudinary.com/dd5e5iszi/image/upload/v1522413092/projects/cayan-4/header.jpg"); }
+  .header .project-code {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: table;
+    padding: 0 20px;
+    border: 4px solid #fff; }
+    .header .project-code h3 {
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 0.5em; }
+  .header .project-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 10px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff; }
+    .header .project-details .project-details-wrapper {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-between; }
+      .header .project-details .project-details-wrapper .project-details-each {
+        padding: 0;
+        margin: 0;
+        margin: 0 10px; }
+        .header .project-details .project-details-wrapper .project-details-each .image {
+          width: 90px;
+          height: 90px;
+          margin: auto;
+          padding: 0 !important;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          background-image: url("https://res.cloudinary.com/cayangroup9292/image/upload/v1522135622/each-project-icons.png"); }
+          .header .project-details .project-details-wrapper .project-details-each .image.location-icons {
+            background-position: -630px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .image.installments-icons {
+            background-position: -506px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .image.delivery-icons {
+            background-position: -382px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .image.type-icons {
+            background-position: -258px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .image.area-icons {
+            background-position: -134px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .image.status-icons {
+            background-position: -10px -10px; }
+        .header .project-details .project-details-wrapper .project-details-each .text {
+          width: 100%; }
+          .header .project-details .project-details-wrapper .project-details-each .text p {
+            margin: 1px;
+            font-weight: 100;
+            font-size: 0.9em;
+            color: #CDA036;
+            font-weight: 500;
+            letter-spacing: 0.1em; }
+            .header .project-details .project-details-wrapper .project-details-each .text p:nth-child(1) {
+              font-size: 0.8em;
+              color: #fff; }
+
+@media (max-width: 992px) {
+  .header {
+    height: 150vh !important; }
+    .header .project-code {
+      border: 2px solid #fff; }
+      .header .project-code h3 {
+        font-size: 1.5em !important; }
+    .header .project-details {
+      width: 110% !important; }
+      .header .project-details .project-details-wrapper {
+        flex-wrap: wrap;
+        width: 100% !important;
+        text-align: center;
+        margin-top: 30px; }
+        .header .project-details .project-details-wrapper .project-details-each {
+          width: 150px !important;
+          margin: 10px auto !important;
+          padding: 0;
+          text-align: center; }
+          .header .project-details .project-details-wrapper .project-details-each .image {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url("http://res.cloudinary.com/cayangroup9292/image/upload/c_scale,w_500/v1522135622/each-project-icons.png"); }
+            .header .project-details .project-details-wrapper .project-details-each .image.location-icons {
+              background-position: -424px -10px; }
+            .header .project-details .project-details-wrapper .project-details-each .image.installments-icons {
+              background-position: -340px -10px; }
+            .header .project-details .project-details-wrapper .project-details-each .image.delivery-icons {
+              background-position: -258px -10px; }
+            .header .project-details .project-details-wrapper .project-details-each .image.type-icons {
+              background-position: -175px -10px; }
+            .header .project-details .project-details-wrapper .project-details-each .image.area-icons {
+              background-position: -90px -10px; }
+            .header .project-details .project-details-wrapper .project-details-each .image.status-icons {
+              background-position: -8px -10px; }
+          .header .project-details .project-details-wrapper .project-details-each .text {
+            width: 100%;
+            margin: auto; }
+            .header .project-details .project-details-wrapper .project-details-each .text p {
+              font-size: 0.9em;
+              letter-spacing: 0; } }
+@media (min-width: 993px) and (max-width: 1300px) {
+  .header .project-details {
+    width: 90%; }
+    .header .project-details .project-details-wrapper .project-details-each {
+      margin: 0; }
+      .header .project-details .project-details-wrapper .project-details-each .text p {
+        font-size: 0.7em;
+        width: 100%; } }
+
+/*# sourceMappingURL=Header.css.map */

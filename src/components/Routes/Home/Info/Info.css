@@ -1,0 +1,40 @@
+.company-intro {
+  margin-top: 4vh !important;
+  text-align: center; }
+  .company-intro h4 {
+    margin-bottom: 50px; }
+  .company-intro p {
+    width: 100% !important;
+    font-size: 0.9em;
+    line-height: 3vh; }
+    .company-intro p a {
+      font-weight: 400;
+      color: #CDA036;
+      border-bottom: 1px solid #CDA036; }
+  .company-intro .company-info-icons {
+    margin-top: 60px;
+    transition: all 0.3s; }
+    .company-intro .company-info-icons .company-info-images {
+      margin: auto;
+      background-image: url("http://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_236/v1522519204/home-page/css_sprites_1.png"); }
+      .company-intro .company-info-icons .company-info-images.investment {
+        width: 90px;
+        height: 70px;
+        background-position: 0px -219px; }
+      .company-intro .company-info-icons .company-info-images.management {
+        width: 80px;
+        height: 70px;
+        background-position: -70px 0px; }
+      .company-intro .company-info-icons .company-info-images.establishment {
+        width: 80px;
+        height: 70px;
+        background-position: 4.5px -5px; }
+      .company-intro .company-info-icons .company-info-images.pickups {
+        width: 80px;
+        height: 70px;
+        background-position: -155px 10px; }
+    .company-intro .company-info-icons h5 {
+      font-size: 0.9em;
+      font-weight: 600; }
+
+/*# sourceMappingURL=info.css.map */

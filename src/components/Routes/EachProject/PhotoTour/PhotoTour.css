@@ -1,0 +1,106 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
+.photo-tour {
+  width: 100%;
+  text-align: center !important;
+  background-image: url("https://res.cloudinary.com/cayangroup9292/image/upload/v1522054899/home-page-whyus/photo-tour-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .photo-tour .container {
+    height: 100%;
+    width: 100%; }
+    .photo-tour .container .row {
+      height: 100%; }
+      .photo-tour .container .row .images {
+        text-align: center;
+        display: flex !important;
+        width: 100% !important;
+        height: 100%;
+        padding: 50px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); }
+        .photo-tour .container .row .images .left-btn, .photo-tour .container .row .images .right-btn {
+          margin: auto;
+          width: 100px;
+          height: 40px;
+          position: relative;
+          z-index: 100;
+          background: #fff;
+          text-align: center;
+          display: flex; }
+          .photo-tour .container .row .images .left-btn p, .photo-tour .container .row .images .right-btn p {
+            margin: auto;
+            font-weight: 400; }
+          .photo-tour .container .row .images .left-btn.right-btn::before, .photo-tour .container .row .images .right-btn.right-btn::before {
+            content: "";
+            color: #fff;
+            position: absolute;
+            right: -19px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid #fff;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent; }
+          .photo-tour .container .row .images .left-btn.left-btn::before, .photo-tour .container .row .images .right-btn.left-btn::before {
+            content: "";
+            color: #fff;
+            position: absolute;
+            left: -19.5px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-right: 20px solid #fff;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent; }
+          @media (min-width: 993px) and (max-width: 1300px) {
+            .photo-tour .container .row .images .left-btn.right-btn, .photo-tour .container .row .images .right-btn.right-btn {
+              width: 80px;
+              right: 16px; }
+            .photo-tour .container .row .images .left-btn.left-btn, .photo-tour .container .row .images .right-btn.left-btn {
+              width: 80px;
+              left: 16px; } }
+        .photo-tour .container .row .images .slick-slider {
+          height: 100%;
+          width: 80%; }
+          .photo-tour .container .row .images .slick-slider .slick-list .slick-track .slick-slide {
+            height: 600px;
+            overflow-y: hidden; }
+          .photo-tour .container .row .images .slick-slider .slick-arrow {
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            z-index: 200;
+            display: inline;
+            height: 40px;
+            opacity: 0; }
+            .photo-tour .container .row .images .slick-slider .slick-arrow.slick-prev {
+              left: -11%; }
+            .photo-tour .container .row .images .slick-slider .slick-arrow.slick-next {
+              right: -11%; }
+          .photo-tour .container .row .images .slick-slider .image-each {
+            text-align: center; }
+            .photo-tour .container .row .images .slick-slider .image-each img {
+              width: 100%;
+              height: auto;
+              border-bottom: 8px solid #fff; }
+
+@media (max-width: 992px) {
+  .photo-tour .container .row {
+    margin-bottom: 0; }
+    .photo-tour .container .row .images {
+      width: 100%;
+      display: block; }
+      .photo-tour .container .row .images .left-btn, .photo-tour .container .row .images .right-btn {
+        display: none !important; }
+      .photo-tour .container .row .images .slick-slider {
+        width: 100%; }
+        .photo-tour .container .row .images .slick-slider .slick-list .slick-track .slick-slide {
+          height: 100%;
+          overflow-y: hidden; } }
+
+/*# sourceMappingURL=PhotoTour.css.map */
