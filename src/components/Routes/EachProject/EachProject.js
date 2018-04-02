@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import find from 'lodash/find';
 import { Link } from 'react-router-dom';
 import './EachProject.css';
@@ -18,10 +19,16 @@ import Slider from 'react-slick'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
+let actions = require('../../../actions');
+
+
+
 
 
 class EachProject extends Component {
   render() {
+    const content = this.props.content;
+    const switchLanguage = this.props.switchLanguage;
     const product = find(PRODUCTS, { id: this.props.match.params.id });
     const currentProduct = product;
 
@@ -34,7 +41,7 @@ class EachProject extends Component {
     };
     return (
       <div>
-        <Navbar />
+        <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
           <section className={"header col s12 cayan-"+ currentProduct.id}>
             <div className="project-code">
               <h3 id="product-code">CAYAN{currentProduct.id}</h3>
@@ -291,4 +298,7 @@ class EachProject extends Component {
   }
 }
 
-export default EachProject;
+export default connect(
+  (state) => ({content: state.content}),
+  (dispatch) => ({switchLanguage: (lang) => dispatch(actions.switchLanguage(lang))})
+)(EachProject);
