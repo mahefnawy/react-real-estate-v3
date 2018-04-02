@@ -25,12 +25,14 @@ class Getintouch extends Component {
     this.setState({
       name: event.target.value
      });
+    console.log(this.state.name);
   }
 
   handleEmailChange = event => {
       this.setState({
         email: event.target.value
        });
+    console.log(this.state.email);
     }
 
   handlePhoneChange = event => {
@@ -41,6 +43,7 @@ class Getintouch extends Component {
       }
 
   handleSubmit = event => {
+    console.log(this.state)
     event.preventDefault();
 
     const user = {
@@ -51,14 +54,17 @@ class Getintouch extends Component {
 
 
 
-    var config = {
-       headers: {
-             'Content-Type': 'application/x-www-form-urlencoded'
-       }
 
-};
-    axios.post(`https://api.formbucket.com/f/buk_5pZlX4fRjDrezI22h0yu8oYL`,  {user} , config)
-      .then(res => {
+    fetch( 'https://api.formbucket.com/f/buk_5pZlX4fRjDrezI22h0yu8oYL', {
+      method: 'post',
+      mode: 'cors',
+      headers: {
+        'accept' : 'application/javascript',
+        'Content-Type': 'application/json',
+        'Authorization': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJEOEJxTkZZRU91YUUwUWk1Y0pUNDhVV1oiLCJpc3MiOiJhcGkuZm9ybWJ1Y2tldC5jb20iLCJ1aWQiOiI1YTg5NDQ2OTY0ZjgxMTA5YmI2NzBlZWMiLCJleHAiOjE1MjUyNjA1MzUsImlhdCI6MTUyMjY2ODUzNX0.cV0CR692ON4p9n6dnfycfljpdznG5tU037vQMQKrmK4',
+      },
+      body: JSON.stringify(user)
+    }).then(res => {
         alert("Thank you, We will contact you soon");
 
       })
@@ -126,7 +132,7 @@ class Getintouch extends Component {
               </div>
               <div className="input-field">
 
-                <input className="validate" type="number" name="phone" placeholder="" onChange={this.handlePhoneChange} required/>
+                <input className="validate" type="text" name="phone" placeholder="" onChange={this.handlePhoneChange} required/>
 
               </div>
                 <button className="btn waves-effect waves-light" type="submit">send</button>
