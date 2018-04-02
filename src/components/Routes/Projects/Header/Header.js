@@ -4,10 +4,11 @@ import './Header.css';
 
 class Header extends Component {
   render() {
+    const data = this.props.data;
     return (
       <section className="projects-hero-carousel col s12">
         <div className="container">
-          <h1>PROJECTS</h1>
+          <h1>{data.title}</h1>
 
         </div>
       </section>

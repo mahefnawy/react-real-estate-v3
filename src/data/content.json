@@ -2,27 +2,96 @@
   {
     "lang": "en",
     "page": {
-      "menu": {
+      "navbar": {
         "home": "Home",
-        "about": "About"
+        "projects": "Projects",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact"
       },
-      "home": {
-        "header": "Getting started with React and Redux",
-        "text": "This is a very basic example how to create multilingual React website using Redux. You can take this code as a base and build on it, replacing current content retrieval from JSON with calls to APIs, extending functionality, etc."
+      "Home": {
+        "header":{
+          "titleMain": "DREAM HOME",
+          "titleSub": "FIND YOUR",
+          "home": "Home",
+          "projects": "Projects",
+          "services": "Services",
+          "about": "About",
+          "contact": "Contact"
+        },
+        "info": {
+          "main": "Cayan Group",
+          "submain": "This is a very basic example how to create multilingual React website using Redux. You can take this code as a base and build on it, replacing current content retrieval from JSON with calls to APIs, extending functionality, etc." ,
+          "investment": "Real Estate Investment",
+          "management": "Real Estate Management",
+          "company": "Company Establishment",
+          "airport": "Airport Pickups"
 
+        },
+        "ProjectsCarousel": {
+          "description": "{product.description}"
+        },
+        "whyus": {
+          "professional": "Professional Team",
+          "fast": "Fast Communication",
+          "pricing": "Best Pricing",
+          "trust": "Trust",
+          "service": "Service Excellence",
+          "passion": "passion to Satisfy"
+        }
+
+
+      },
+      "header": {
+        "title": "Projects"
       }
     }
   },
   {
     "lang": "ar",
     "page": {
-      "menu": {
-        "home": "هوم",
-        "about": "ابوت"
+      "navbar": {
+        "home": "الرئيسية",
+        "projects": "المشاريع",
+        "services": "الخدمات",
+        "about": "من نحن",
+        "contact": "تواصل معنا"
       },
-      "home": {
-        "header": "جيتينج ستارتد",
-        "text": "زيس ايس فري باسيك"
+      "Home": {
+        "header":{
+          "titleMain": "احلامك في تركيا",
+          "titleSub": "امتلك بيت",
+          "home": "الرئيسية",
+          "projects": "المشاريع",
+          "services": "الخدمات",
+          "about": "من نحن",
+          "contact": "تواصل معنا"
+        },
+        "info": {
+          "main": "كيان جروب",
+          "submain": "كيان جروب",
+          "investment": "استثمار عقاري",
+          "management": "ادارة العقارات",
+          "company": "انشاء شركات",
+          "airport": "خدمات المطار"
+        },
+        "ProjectsCarousel": {
+          "description": "{product.descriptionAr}"
+        },
+        "whyus": {
+          "professional": "فريق عمل محترف",
+          "fast": "تواصل سريع",
+          "pricing": "احسن اسعار",
+          "trust": "ثقة",
+          "service": "خدمة مميزة",
+          "passion": "شغف للارضاء"
+        }
+
+
+      },
+
+      "header": {
+        "title": "المشاريع"
       }
     }
   }

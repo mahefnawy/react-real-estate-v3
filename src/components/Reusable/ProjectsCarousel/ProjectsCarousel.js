@@ -9,6 +9,7 @@ import './ProjectsCarousel.css';
 class ProjectsCarousel extends Component {
 
   render() {
+    const data = this.props.data;
               var settings = {
                 dots: false,
                 infinite: true,

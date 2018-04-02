@@ -91,7 +91,6 @@
         margin: 0 2px;
         background: none; }
         .home-page-header .home-page-nav .hide-on-med-and-down li a {
-          letter-spacing: 0.2em;
           font-size: 0.9em;
           font-weight: 100;
           max-height: 50px;
@@ -167,13 +166,10 @@
         .home-page-header .home-page-nav .side-nav li.active {
           background-color: #CDA036; }
           .home-page-header .home-page-nav .side-nav li.active a {
-            font-weight: 400;
-            letter-spacing: 0.5em;
-              letter-spacing-font-size: 1.1em; }
+            font-weight: 400; }
         .home-page-header .home-page-nav .side-nav li a {
           color: #fff;
           font-size: 1em;
-          letter-spacing: 0.2em;
           font-weight: 200; }
   .home-page-header .button-collapse {
     margin-top: -8px; }

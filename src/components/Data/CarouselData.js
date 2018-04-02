@@ -1,8 +1,9 @@
 const products = [
-  
+
   {
     "id": "107",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
+    "descriptionAr":"بشسيسششسش.",
     "types": "1+1, 2+1, 3+1, 4+1, 5+1",
     "area":"70m - 344m",
     "priceMin":"460,000 TL",

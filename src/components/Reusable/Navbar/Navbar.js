@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import { bubble as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css';
+import '../../../data/content.json'
+const Provider = require('react-redux').Provider;
+const createStore = require('redux').createStore;
+const content = require('../../../reducer');
 
 class Navbar extends Component {
   showSettings (event) {
     event.preventDefault();
   }
-  // burgerToggle(){
-  //   return (
-  //       var elem = document.querySelector('.sidenav');
-  //       var instance = M.Sidenav.init(elem, options);
-  //
-  //   );
-  // }
+
   render() {
         const data = this.props.data;
         let switchLanguage = this.props.switchLanguage;
@@ -26,16 +24,16 @@ class Navbar extends Component {
             <NavLink activeClassName="selected" className="menu-item" exact to="/">{data.home}</NavLink>
           </li>
           <li className="link-wrapper">
-            <NavLink activeClassName="selected" className="menu-item" exact to="/projects">{data.about}</NavLink>
+            <NavLink activeClassName="selected" className="menu-item" exact to="/projects">{data.projects}</NavLink>
           </li>
           <li className="link-wrapper">
-            <NavLink activeClassName="selected" className="menu-item" exact to="/services">Services</NavLink>
+            <NavLink activeClassName="selected" className="menu-item" exact to="/services">{data.services}</NavLink>
           </li>
           <li className="link-wrapper">
-            <NavLink activeClassName="selected" className="menu-item" exact to="/about">About</NavLink>
+            <NavLink activeClassName="selected" className="menu-item" exact to="/about">{data.about}</NavLink>
           </li>
           <li className="link-wrapper">
-            <NavLink activeClassName="selected" className="menu-item" exact to="/contact">Contact</NavLink>
+            <NavLink activeClassName="selected" className="menu-item" exact to="/contact">{data.contact}</NavLink>
           </li>
 
         </Menu>
@@ -47,19 +45,19 @@ class Navbar extends Component {
               <ul className="nav-links center hide-on-med-and-down">
 
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link" exact to="/">HOME</NavLink>
+                  <NavLink activeClassName="selected" className="nav-link" exact to="/">{data.home}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/projects">PROJECTS</NavLink>
+                  <NavLink activeClassName="selected" className="nav-link"  to="/projects">{data.projects}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/services">SERVICES</NavLink>
+                  <NavLink activeClassName="selected" className="nav-link"  to="/services">{data.services}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/about">ABOUT</NavLink>
+                  <NavLink activeClassName="selected" className="nav-link"  to="/about">{data.about}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/contact">CONTACT</NavLink>
+                  <NavLink activeClassName="selected" className="nav-link"  to="/contact">{data.contact}</NavLink>
                 </li>
 
               </ul>

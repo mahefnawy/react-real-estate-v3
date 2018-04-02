@@ -6,6 +6,7 @@ import './index.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './App';
 
+
 import Services from './components/Routes/Services/Services.js';
 import About from './components/Routes/About/About.js';
 import Contact from './components/Routes/Contact/Contact.js';
@@ -24,15 +25,14 @@ ReactDOM.render(
   <Provider {... { store }}>
   <BrowserRouter>
     <Switch>
-
       <Route exact path="/" component={App} />
+      
       <Route path="/contact" component={Contact} />
       <Route path="/projects" component={Projects} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
-
-
       <Route exact path="/products/:id" component={EachProject} />
+
     </Switch>
   </BrowserRouter>
   </Provider>,

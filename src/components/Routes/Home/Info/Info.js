@@ -9,8 +9,8 @@ class Info extends Component {
       <section className="company-intro center section" id="company-intro">
           <div className="container">
             <div className="row">
-            <h4>{data.header}</h4>
-            <p>{data.text}  <a href="/about">Read more</a></p>
+            <h4>{data.main}</h4>
+            <p>{data.submain}</p>
 
               <div className="row">
                 <div className="col s12 m12 l12">
@@ -19,21 +19,21 @@ class Info extends Component {
 
                     </div>
                     <br />
-                    <h5>Real Estate Investment</h5>
+                    <h5>{data.investment}</h5>
                   </div>
                   <div className="company-info-icons col s6 l3">
                     <div className="company-info-images management">
 
                     </div>
                     <br/>
-                    <h5>Real Estate Management</h5>
+                    <h5>{data.management}</h5>
                   </div>
                   <div className="company-info-icons col s6 l3">
                     <div className="company-info-images establishment">
 
                     </div>
                     <br />
-                    <h5>Company Establishment</h5>
+                    <h5>{data.company}</h5>
                   </div>
 
                   <div className="company-info-icons col s6 l3">
@@ -41,7 +41,7 @@ class Info extends Component {
 
                     </div>
                     <br />
-                    <h5>Airport Pickups</h5>
+                    <h5>{data.airport}</h5>
                   </div>
 
                 </div>

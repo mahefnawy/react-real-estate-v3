@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './Services.css';
 import Action from '../../Reusable/Action/Action.js';
 import Navbar from '../../Reusable/Navbar/Navbar.js';
@@ -9,16 +10,22 @@ import Footer from '../../Reusable/Footer/Footer.js';
 
 
 
+let actions = require('../../../actions');
+
+
+
 
 
 
 
 class Services extends Component {
   render() {
+    const content = this.props.content;
+    const switchLanguage = this.props.switchLanguage;
     return (
       <div className="">
       <Action />
-        <Navbar />
+        <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
         <Header />
         <Sections />
 
@@ -33,4 +40,7 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default connect(
+  (state) => ({content: state.content}),
+  (dispatch) => ({switchLanguage: (lang) => dispatch(actions.switchLanguage(lang))})
+)(Services);

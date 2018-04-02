@@ -18,17 +18,17 @@ class Home extends Component {
   render() {
         const content = this.props.content;
         const switchLanguage = this.props.switchLanguage;
-        
+
 
         if (content){
               return (
                 <div className="home">
                   <Action />
-                  <Navbar data={content.page.menu} switchLanguage={switchLanguage}/>
-                  <Header />
-                  <Info  data={content.page.home}/>
-                  <ProjectsCarousel />
-                  <Whyus />
+                  <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
+                  <Header data={content.page.Home.header}/>
+                  <Info  data={content.page.Home.info}/>
+                  <ProjectsCarousel data={content.page.Home.ProjectsCarousel}/>
+                  <Whyus data={content.page.Home.whyus}/>
                   <Testimonial />
                   <Getintouch />
                   <Footer />
@@ -42,9 +42,7 @@ class Home extends Component {
 }
 
 
-module.exports = ReactRedux.connect(
+export default connect(
   (state) => ({content: state.content}),
   (dispatch) => ({switchLanguage: (lang) => dispatch(actions.switchLanguage(lang))})
 )(Home);
-
-export default Home;
