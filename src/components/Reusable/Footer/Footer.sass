@@ -15,11 +15,18 @@
     li
       display: inline-block
       margin: 20px
+
       a
         color: #fff
         letter-spacing: 0.3em
+        &.footerNavAr
+          letter-spacing: 0
+          font-family: 'JFLight', sans-serif
+          &.selected
+            font-family: 'JFRegular', sans-serif
         &.selected
           font-weight: 600
+
           &::after
             content: ""
             display: block
@@ -40,3 +47,5 @@
   p
     color: #F0F0F0
     font-weight: 100
+    &.footerNavAr
+      font-family: 'JFLight', sans-serif

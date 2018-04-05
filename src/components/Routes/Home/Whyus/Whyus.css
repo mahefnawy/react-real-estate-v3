@@ -23,6 +23,16 @@
       font-size: 1.2em; }
     .why-choose-us h1::after {
       top: 75%; }
+  .why-choose-us .whyusTitle {
+    text-align: right;
+    right: 0;
+    letter-spacing: 0;
+    direction: rtl;
+    font-family: "JFRegular", sans-serif; }
+    .why-choose-us .whyusTitle::before {
+      display: none; }
+    .why-choose-us .whyusTitle::after {
+      margin-right: 10px; }
   .why-choose-us .why-choose-us-info {
     margin-top: 40px;
     color: #fff; }
@@ -31,9 +41,16 @@
       .why-choose-us .why-choose-us-info .why-choose-us-info-each .bg {
         font-size: 50px;
         color: #CDA036; }
-      .why-choose-us .why-choose-us-info .why-choose-us-info-each p {
+      .why-choose-us .why-choose-us-info .why-choose-us-info-each .why-choose-us-text p {
         color: #5D5D5D;
         line-height: 1.1em; }
+      .why-choose-us .why-choose-us-info .why-choose-us-info-each .why-choose-us-text.whyusAr {
+        text-align: right;
+        direction: rtl; }
+        .why-choose-us .why-choose-us-info .why-choose-us-info-each .why-choose-us-text.whyusAr h6 {
+          font-family: "JFRegular", sans-serif; }
+        .why-choose-us .why-choose-us-info .why-choose-us-info-each .why-choose-us-text.whyusAr p {
+          font-family: "JFLight", sans-serif; }
 
 @media (max-width: 992px) {
   h1 {

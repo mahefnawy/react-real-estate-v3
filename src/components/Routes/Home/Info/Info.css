@@ -3,10 +3,14 @@
   text-align: center; }
   .company-intro h4 {
     margin-bottom: 50px; }
+    .company-intro h4.infoAr {
+      font-family: "JFRegular", sans-serif; }
   .company-intro p {
     width: 100% !important;
     font-size: 0.9em;
     line-height: 3vh; }
+    .company-intro p.infoAr {
+      font-family: "JFLight", sans-serif; }
     .company-intro p a {
       font-weight: 400;
       color: #CDA036;
@@ -36,5 +40,7 @@
     .company-intro .company-info-icons h5 {
       font-size: 0.9em;
       font-weight: 600; }
+      .company-intro .company-info-icons h5.infoAr {
+        font-family: "JFRegular", sans-serif; }
 
 /*# sourceMappingURL=info.css.map */

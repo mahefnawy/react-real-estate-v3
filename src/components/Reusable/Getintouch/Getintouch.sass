@@ -7,6 +7,16 @@
   position: relative
   h1
     margin-top: 0
+    &.titleAr
+      text-align: right
+      direction: rtl
+      letter-spacing: 0
+      font-family: 'JFRegular', sans-serif
+      &::before
+        display: none
+      &::after
+        width: 40px
+        margin-right: 10px
     &::before
       content: "CONTACT US" !important
     &::after
@@ -76,19 +86,70 @@
       font-weight: 100
       font-size: 2em
       margin-top: 0
+      &.titleAr
+        text-align: right
+        direction: rtl
+        letter-spacing: 0
+        font-family: 'JFRegular', sans-serif
     p
       color: #fff
       font-weight: 100
       opacity: 0.5
+      &.titleAr
+        text-align: right
+        direction: rtl
+        letter-spacing: 0
+        font-family: 'JFLight', sans-serif
+
     form
-      margin-top: 50px
+      margin-top: 20px
       text-align: center
+
       .input-field
         width: 90%
         opacity: 1
+        .row
+
+          .label
+            text-align: left
+            position: relative
+            right: 0
+            margin-left: 10px
+
+
+            &.titleAr
+              position: relative
+              right: 0
+              text-align: right
+              direction: rtl
+              letter-spacing: 0
+              margin-right: 0 !important
+              font-family: 'JFLight', sans-serif
+        .label
+          text-align: left
+
+          &.titleAr
+            display: table
+            text-align: right
+            direction: rtl
+            letter-spacing: 0
+        &.inputAr
+          position: relative
+          right: 0
+          text-align: right
+          direction: rtl
+          letter-spacing: 0
+          margin-right: 0 !important
+          input
+            position: relative
+            right: 0
+
         i
           font-size: 25px
           margin-top: 20px
+        input
+          color: #fff
+
         input::placeholder
           opacity: 0.5
           font-size: 0.8em
@@ -99,6 +160,49 @@
           border-bottom: 1px solid #CDA036 !important
           box-shadow: 0 1px 0 0 #CDA036 !important
           border-left: none !important
+      .react-tel-input
+        text-align: left !important
+        direction: ltr
+        margin-top: 20px !important
+        width: 95%
+        &.inputAr
+
+          transform: translateX(-25px)
+        input
+          border: none
+
+          background-color: rgba(0,0,0,0)
+          box-shadow: none
+          max-width: 95%
+          border-radius: 0
+          border-bottom: 1.5px solid rgba(255,255,255,0.5)
+          color: #fff
+        input:focus
+          border-bottom: 1.5px solid #CDA036 !important
+          box-shadow: 0 1px 0 0 #CDA036 !important
+          border-left: none !important
+        .flag-dropdown
+          background-color: rgba(0,0,0,0)
+          border: none
+          border-radius: 0
+          &:hover
+            background-color: rgba(0,0,0,0)
+          .selected-flag
+            background-color: none
+            &:hover
+              background-color: rgba(0,0,0,0)
+          .country-list
+            background-color: #222222
+            li
+              text-align: left
+              &:hover
+                background-color: #CDA036
+              &.highlight
+                background-color: #CDA036
+              .flag
+                width: 20px
+              .dial-code
+                color: #fff
       button
         margin: 10px auto
         width: 200px
@@ -106,7 +210,7 @@
         font-size: 0.8em
         font-weight: 500
     .contact-info
-      margin-top: 20px
+      margin-top: 10px
       text-align: left
       opacity: 1
       i
@@ -118,7 +222,7 @@
         opacity: 1
     .contact-social-mobile
       text-align: center
-      margin-top: 30px
+      margin-top: 20px
       a
         margin: 10px
         i
@@ -136,12 +240,10 @@
     margin: 0
     padding: 0
     box-shadow: 5px 5px 100px 0 rgba(0,0,0,0.2)
-
-
 @media (max-width: 992px)
 
   .contact-section
-    margin-top: 130px
+    margin-top: 100px
     height: 770px !important
     h1
       padding-top: 0
@@ -161,15 +263,16 @@
           position: relative
           left: 0
           width: 80%
-        .intl-tel-input
-          transform: translateX(0px)
-          position: relative
-          left: 0
         display: block
         margin: auto
-        padding-top: 40px
+        padding-top: 10px
         text-align: center
         justify-content: space-between
+
+        .react-tel-input
+          width: 80% !important
+          left: 0
+          float: left !important
         a
           &.facebook
             img

@@ -1,6 +1,7 @@
 const products = [{
     "id": "15",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "name": "Bursa Modern",
     "typesAll": "1+1, 2+1, 3+1, 4+1, 5+2",
     "priceMin":"276,089 TL",
@@ -68,6 +69,7 @@ const products = [{
   {
     "id": "107",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1, 5+1",
     "priceMin":"460,000 TL",
     "priceMax":"2,818,847 TL",
@@ -144,6 +146,7 @@ const products = [{
   {
     "id": "11",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1, 3+1v, 4+1v, 5+1v",
     "priceMin":"442,000 TL",
     "priceMax":"4,417,000 TL",
@@ -234,6 +237,7 @@ const products = [{
   {
     "id": "101",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1",
     "priceMin":"276,000 TL",
     "priceMax":"707,000 TL",
@@ -287,6 +291,7 @@ const products = [{
   {
     "id": "100",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"411,000 TL",
     "priceMax":"1,270,000 TL",
@@ -347,6 +352,7 @@ const products = [{
   {
     "id": "128",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+0, 1+1, 2+1, 3+1",
     "priceMin":"292,940 TL",
     "priceMax":"1085,000 TL",
@@ -409,6 +415,7 @@ const products = [{
   {
     "id": "139",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+2",
     "priceMin":"425,000 TL",
     "priceMax":"882,000 TL",
@@ -466,6 +473,7 @@ const products = [{
   {
     "id": "106",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1",
     "priceMin":"290,579 TL",
     "priceMax":"671,649 TL",
@@ -518,6 +526,7 @@ const products = [{
   {
     "id": "115",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"274,000 TL",
     "priceMax":"799,000 TL",
@@ -588,6 +597,7 @@ const products = [{
   {
     "id": "112",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"244,000 TL",
     "priceMax":"803,000 TL",
@@ -649,6 +659,7 @@ const products = [{
   {
     "id": "138",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "2+1, 3+1, 4+2",
     "priceMin":"558,000 TL",
     "priceMax":"1,163,000 TL",
@@ -703,6 +714,7 @@ const products = [{
   {
     "id": "127",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "2+1, 3+1, 4+1",
     "priceMin":"533,000 TL",
     "priceMax":"1,200,000 TL",
@@ -757,6 +769,7 @@ const products = [{
   {
     "id": "132",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"595,000 TL",
     "priceMax":"2,130,000 TL",
@@ -817,6 +830,7 @@ const products = [{
   {
     "id": "103",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"395,000 TL",
     "priceMax":"1,235,000 TL",
@@ -877,6 +891,7 @@ const products = [{
   {
     "id": "97",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+0, 1+1, 2+1, 3+1, 4+1",
     "priceMin":"372,000 TL",
     "priceMax":"1,937,000 TL",
@@ -947,6 +962,7 @@ const products = [{
   {
     "id": "41",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"423,000 TL",
     "priceMax":"1,180,000 TL",
@@ -1013,6 +1029,7 @@ const products = [{
   {
     "id": "4",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.",
     "typesAll": "1+1, 2+1, 3+1, 4+1",
     "priceMin":"320,000 TL",
     "priceMax":"900,000 TL",

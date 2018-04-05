@@ -102,10 +102,18 @@
             font-size: 0.9em;
             color: #CDA036;
             font-weight: 500;
-            letter-spacing: 0.1em; }
+            letter-spacing: 0.1em;
+            display: none; }
+            .header .project-details .project-details-wrapper .project-details-each .text p.infoTextEn {
+              display: block; }
+            .header .project-details .project-details-wrapper .project-details-each .text p.infoTextAr {
+              display: block; }
+            .header .project-details .project-details-wrapper .project-details-each .text p.nutural {
+              display: block; }
             .header .project-details .project-details-wrapper .project-details-each .text p:nth-child(1) {
               font-size: 0.8em;
-              color: #fff; }
+              color: #fff;
+              display: block; }
 
 @media (max-width: 992px) {
   .header {

@@ -3,7 +3,7 @@ const products = [
   {
     "id": "107",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
-    "descriptionAr":"بشسيسششسش.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ.",
     "types": "1+1, 2+1, 3+1, 4+1, 5+1",
     "area":"70m - 344m",
     "priceMin":"460,000 TL",
@@ -23,6 +23,7 @@ const products = [
   {
     "id": "11",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ.",
     "types": "1+1, 2+1, 3+1, 4+1, 5+1",
     "area":"66m - 385m",
     "priceMin":"442,000 TL",
@@ -42,6 +43,7 @@ const products = [
   {
     "id": "15",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ.",
     "types": "1+1, 2+1, 3+1, 4+1, 5+2",
     "area":"70m - 586m",
     "priceMin":"276,089 TL",
@@ -61,6 +63,7 @@ const products = [
   {
     "id": "101",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ.",
     "types": "1+1, 2+1, 3+1",
     "area":"66m - 167m",
     "priceMin":"276,000 TL",
@@ -80,6 +83,7 @@ const products = [
   {
     "id": "100",
     "description":"garden and terrace duplexes and Gourmet Bazaar opened on the shore. Art Street, Performance Square, Marina Gurme Bazaar.",
+    "descriptionAr":"ناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ.",
     "types": "1+1, 2+1, 3+1, 4+1",
     "area":"48m - 252m",
     "priceMin":"411,000 TL",

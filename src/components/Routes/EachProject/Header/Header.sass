@@ -62,7 +62,6 @@
     padding: 10px
     width: 70%
     left: 50%
-
     transform: translateX(-50%)
     text-align: center
     //display: flex
@@ -111,11 +110,18 @@
             font-size: 0.9em
             color: #CDA036
             font-weight: 500
-
             letter-spacing: 0.1em
+            display: none
+            &.infoTextEn
+              display: block
+            &.infoTextAr
+              display: block
+            &.nutural
+              display: block
             &:nth-child(1)
               font-size: 0.8em
               color: #fff
+              display: block
 @media (max-width: 992px)
   .header
     height: 150vh !important

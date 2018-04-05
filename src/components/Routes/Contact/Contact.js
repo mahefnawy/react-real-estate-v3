@@ -27,8 +27,8 @@ class Contact extends Component {
         <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
         <Header />
 
-        <Getintouch />
-        <Footer />
+        <Getintouch data={content.page.getintouch}/>
+        <Footer data={content.page.footer}/>
       </div>
     );
   }

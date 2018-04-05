@@ -23,8 +23,8 @@ class About extends Component {
         <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
         <Header />
         <Sections />
-        <Getintouch />
-        <Footer />
+        <Getintouch data={content.page.getintouch}/>
+        <Footer data={content.page.footer}/>
 
       </div>
     );

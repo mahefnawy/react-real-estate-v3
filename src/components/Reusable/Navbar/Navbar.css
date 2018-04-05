@@ -1,5 +1,8 @@
 .bm-burger-button {
-  display: none; }
+  display: none;
+  opacity: 0; }
+  .bm-burger-button button {
+    display: none; }
 
 .bm-menu {
   display: none; }
@@ -40,10 +43,12 @@
           background-color: #CDA036; }
           .navbar-fixed .normal-nav .side-nav li.active a {
             font-weight: 400;
+            letter-spacing: 0.5em;
             font-size: 1.1em; }
         .navbar-fixed .normal-nav .side-nav li a {
           color: #fff;
           font-size: 1em;
+          letter-spacing: 0.2em;
           font-weight: 200; }
     .navbar-fixed .normal-nav .nav-links {
       margin: auto;
@@ -52,10 +57,19 @@
       text-align: center;
       display: flex;
       justify-content: space-between; }
+      .navbar-fixed .normal-nav .nav-links.navbarAr {
+        display: flex;
+        flex-direction: row-reverse; }
+        .navbar-fixed .normal-nav .nav-links.navbarAr li a {
+          letter-spacing: 0;
+          font-family: "JFLight", sans-serif; }
+          .navbar-fixed .normal-nav .nav-links.navbarAr li a.selected {
+            font-family: "JFRegular", sans-serif; }
       .navbar-fixed .normal-nav .nav-links li {
         margin: 2px; }
         .navbar-fixed .normal-nav .nav-links li a {
           color: #222222;
+          letter-spacing: 0.2em;
           font-size: 0.9em;
           font-weight: 300;
           max-height: 50px;
@@ -108,7 +122,8 @@
     height: 18px;
     right: 20px;
     top: 20px;
-    display: block; }
+    display: block;
+    opacity: 1; }
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
@@ -149,6 +164,7 @@
       .bm-item-list li a {
         font-family: "Montserrat", sans-serif !important;
         font-weight: 100;
+        letter-spacing: 0.1em;
         font-size: 0.9em; }
         .bm-item-list li a.selected {
           font-size: 1em;

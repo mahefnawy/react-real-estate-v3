@@ -3,6 +3,7 @@
     "lang": "en",
     "page": {
       "navbar": {
+        "class": "" ,
         "home": "Home",
         "projects": "Projects",
         "services": "Services",
@@ -11,7 +12,12 @@
       },
       "Home": {
         "header":{
-          "titleMain": "DREAM HOME",
+          "class": "",
+          "classTitle" : "",
+          "classSpan": "",
+          "titleMain1": "DREAM",
+          "titleMain2": " ",
+          "titleMain3": "HOME",
           "titleSub": "FIND YOUR",
           "home": "Home",
           "projects": "Projects",
@@ -20,6 +26,7 @@
           "contact": "Contact"
         },
         "info": {
+          "classInfo" : "",
           "main": "Cayan Group",
           "submain": "This is a very basic example how to create multilingual React website using Redux. You can take this code as a base and build on it, replacing current content retrieval from JSON with calls to APIs, extending functionality, etc." ,
           "investment": "Real Estate Investment",
@@ -29,21 +36,105 @@
 
         },
         "ProjectsCarousel": {
-          "description": "{product.description}"
+          "classTitle": "",
+          "title": "Projects",
+          "btns" : "",
+          "descriptionTitle" : "Description",
+          "classDescriptionTitle" : "",
+          "classprice" : "right",
+          "classDescriptionEn" : "descriptionEn",
+          "classDescriptionAr" : "",
+          "classEn": "classEn",
+          "classAr": "",
+          "classIcons": "",
+          "classIconsI": "",
+          "moreDetails": "More Details"
         },
         "whyus": {
+          "title" : "WHY CHOOSE US",
+          "classTitle": "",
+          "classIcon": "",
+          "class": "",
           "professional": "Professional Team",
+          "professionalText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
           "fast": "Fast Communication",
+          "fastText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
           "pricing": "Best Pricing",
+          "pricingText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
           "trust": "Trust",
+          "trustText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
           "service": "Service Excellence",
-          "passion": "passion to Satisfy"
+          "serviceText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the",
+          "passion": "passion to Satisfy",
+          "passionText": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the"
         }
 
 
       },
-      "header": {
-        "title": "Projects"
+      "projects": {
+        "title": "Projects",
+        "classTitle": ""
+      },
+      "services": {
+        "classTitle": "",
+        "classP": "",
+        "title": "OUR SERVICES",
+        "investment": "Real Estate Investment",
+        "investmentText": "1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it .",
+        "management": "Real Estate Management",
+        "managementText": "1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it .",
+        "company": "Companies Establisment",
+        "companyText": "1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it .",
+        "airport": "Airport Pickups",
+        "airportText": "1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it 1500s, when an unknown printer took a galley of type and scrambled it ."
+      },
+      "eachProject": {
+        "classInfoEn": "infoTextEn",
+        "classInfoAr": "",
+        "location": "Location",
+        "delivery": "Delivery",
+        "type": "Type",
+        "area": "Area",
+        "installments": "Installments",
+        "status": "Status",
+        "classTitle": "",
+        "overview" : "OVERVIEW",
+        "photo" : "PHOTO TOUR",
+        "privileges" : "PRIVILEGES",
+        "parks" : "GREEN AREAS",
+        "family" : "FAMILY FRIENDLY",
+        "pool" : "SWIMMIN POOL",
+        "security" : "SECURITY",
+        "cafes" : "CAFES",
+        "resturants" : "RESTURANTS",
+        "fitness" : "FITNESS CENTER",
+        "trails" : "HIKING TRAILS",
+        "plans" : "FLOORPLANS & APARTMENT TYPES",
+        "button" : "ENQUIRE ABOUT THIS APARTMENT",
+        "nearBy" : "LOCATION & NEARBY PLACES",
+        "ataturk": "ATATURK AIRPORT",
+        "airport": "NEW AIRPORT",
+        "taksim" : "TAKSIM"
+
+      },
+      "getintouch": {
+        "classTitle": "",
+        "title": "CONTACT US" ,
+        "getInTouch": "Get in Touch",
+        "getInTouchP": "please fill the form and we will contact you during work hours.",
+        "classInput": "",
+        "name" : "Full Name",
+        "email" : "Email",
+        "number" : "Phone Number"
+      },
+      "footer": {
+        "classNav": "",
+        "home": "HOME",
+        "projects": "PROJECTS" ,
+        "services": "SERVICES",
+        "about": "ABOUT",
+        "contact": "CONTACT",
+        "copyrights" : "© Cayan Group Real Estate 2018"
       }
     }
   },
@@ -51,6 +142,7 @@
     "lang": "ar",
     "page": {
       "navbar": {
+        "class": "navbarAr" ,
         "home": "الرئيسية",
         "projects": "المشاريع",
         "services": "الخدمات",
@@ -59,7 +151,12 @@
       },
       "Home": {
         "header":{
-          "titleMain": "احلامك في تركيا",
+          "class": "headerNav",
+          "classTitle" : "titleAr",
+          "classSpan": "spanAr",
+          "titleMain1": "احلامك",
+          "titleMain2": " في ",
+          "titleMain3": "تركيا",
           "titleSub": "امتلك بيت",
           "home": "الرئيسية",
           "projects": "المشاريع",
@@ -68,6 +165,7 @@
           "contact": "تواصل معنا"
         },
         "info": {
+          "classInfo" : "infoAr",
           "main": "كيان جروب",
           "submain": "كيان جروب",
           "investment": "استثمار عقاري",
@@ -76,22 +174,110 @@
           "airport": "خدمات المطار"
         },
         "ProjectsCarousel": {
-          "description": "{product.descriptionAr}"
+          "classTitle": "carouselTitleAr",
+          "title": "المشاريع",
+          "btns" : "btnAr",
+          "descriptionTitle" : "تفاصيل المشروع",
+          "classDescriptionTitle" : "arabicTitle right",
+          "classprice" : "priceClass left",
+          "classDescriptionEn" : "",
+          "classDescriptionAr" : "descriptionAr",
+          "classEn": "",
+          "classAr": "classAr",
+          "classIcons1": "iconsAr right",
+          "classIcons2": "iconsAr left",
+          "classIconsI": "right",
+          "moreDetails": "تفاصيل اكثر"
+
+
         },
         "whyus": {
+          "title" : "لماذا نحن؟",
+          "classTitle": "whyusTitle",
+          "classIcon": "right",
+          "classText": "left whyusAr",
           "professional": "فريق عمل محترف",
+          "professionalText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص",
           "fast": "تواصل سريع",
-          "pricing": "احسن اسعار",
+          "fastText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص",
+          "pricing": "افضل اسعار",
+          "pricingText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص",
           "trust": "ثقة",
+          "trustText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص",
           "service": "خدمة مميزة",
-          "passion": "شغف للارضاء"
+          "serviceText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص",
+          "passion": "شغف للارضاء",
+          "passionText": "أين أجده ؟هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص"
         }
 
 
       },
 
-      "header": {
-        "title": "المشاريع"
+      "projects": {
+        "title": "المشاريع",
+        "classTitle": "titleAr"
+
+      },
+      "services": {
+        "classTitle": "servicesTitleAr",
+        "classP": "right text-direction",
+        "title": "خدماتنا",
+        "investment": "استثمار عقاري",
+        "investmentText": "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات",
+        "management": "ادارة العقارات",
+        "managementText": "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات",
+        "company": "انشاء شركات",
+        "companyText": "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات",
+        "airport": "خدمات المطار",
+        "airportText": "هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات"
+      },
+      "eachProject": {
+        "classInfoEn": "",
+        "classInfoAr": "infoTextAr",
+        "location": "الموقع",
+        "delivery": "التسليم",
+        "type": "النوع",
+        "area": "المساحة",
+        "installments": "الدفع",
+        "status": "الحالة",
+        "classTitle": "titleAr",
+        "overview" : "تفاصيل عن المشروع",
+        "photo" : "صور المشروع",
+        "privileges" : "مميزات المشروع",
+        "parks" : "مساحات خضراء",
+        "family" : "مناسب للعائلات",
+        "pool" : "حوض سباحة",
+        "security" : "امن",
+        "cafes" : "كافيهات",
+        "resturants" : "مطاعم",
+        "fitness" : "مركز لياقة",
+        "trails" : "ممشى",
+        "plans" : "انواع الشقق والمساحات",
+        "button" : "اسال عن المشروع",
+        "nearBy" : "الموقع والاماكن القريبة",
+        "ataturk": "مطار اتاتورك",
+        "airport": "المطار الجديد",
+        "taksim" : "تقسيم"
+
+      },
+      "getintouch": {
+        "classTitle": "titleAr",
+        "title": "تواصل معنا" ,
+        "getInTouch": "اتصل بنا",
+        "getInTouchP": "من فضلك املأ بياناتك وسوف نقوم بالتصال بك",
+        "classInput": "inputAr right",
+        "name" : "الاسم",
+        "email" : "الايميل",
+        "number" : "رقم الهاتف"
+      },
+      "footer": {
+        "classNav": "footerNavAr",
+        "home": "الرئيسية",
+        "projects": "المشاريع" ,
+        "services": "الخدمات",
+        "about": "من نحن",
+        "contact": "تواصل معنا",
+        "copyrights" : "جميع الحقوق محفوظة كيان جروب ٢٠١٨©"
       }
     }
   }

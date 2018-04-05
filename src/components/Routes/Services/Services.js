@@ -27,14 +27,14 @@ class Services extends Component {
       <Action />
         <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
         <Header />
-        <Sections />
+        <Sections data={content.page.services} switchLanguage={switchLanguage}/>
 
 
 
 
 
-        <Getintouch />
-        <Footer />
+        <Getintouch data={content.page.getintouch}/>
+        <Footer data={content.page.footer}/>
       </div>
     );
   }

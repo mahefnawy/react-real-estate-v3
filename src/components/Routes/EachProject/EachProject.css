@@ -9,6 +9,10 @@
     font-size: 2em;
     letter-spacing: 0.5em;
     font-weight: 400; }
+    .text h2.titleAr {
+      letter-spacing: 0 !important; }
+      .text h2.titleAr::after {
+        display: none; }
   .text hr {
     border: 2px solid #CDA036;
     width: 30%;

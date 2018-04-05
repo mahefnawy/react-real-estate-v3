@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import ReactTelInput from 'react-telephone-input/lib/withStyles';
 import './Getintouch.css';
-
 import Map from '../Map/Map.js';
 
 class Getintouch extends Component {
@@ -11,12 +10,15 @@ class Getintouch extends Component {
     this.state = {
       name: '',
       email: '',
-      phone: ''
+      phone: '',
+      url: ''
     };
 
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handlePhoneChange = this.handlePhoneChange.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+
+
   }
 
 
@@ -35,22 +37,35 @@ class Getintouch extends Component {
     console.log(this.state.email);
     }
 
-  handlePhoneChange = event => {
-        this.setState({
-          phone: event.target.value
-         });
-         console.log(this.state.phone);
-      }
+  handleInputChange = (telNumber, selectedCountry) => {
+  console.log('input changed. number: ', telNumber, 'selected country: ', selectedCountry);
+  var currentLocation = window.location.href;
+  this.setState({
+    phone: telNumber,
+    url: currentLocation
+  });
+
+}
+
+
+
+
+
 
   handleSubmit = event => {
     console.log(this.state)
     event.preventDefault();
 
+
+
     const user = {
       name: this.state.name,
       email: this.state.email,
-      phone: this.state.phone
+      phone: this.state.phone,
+      url: this.state.url
     };
+
+
 
 
 
@@ -76,12 +91,16 @@ class Getintouch extends Component {
 
 
 
+
+
+
   render() {
+    const data = this.props.data;
     return (
     <section className="contact-section" id="contact-section">
         <div className="container">
           <div className="row">
-            <h1 className="body-h1">CONTACT US</h1>
+            <h1 className={"body-h1 " + data.classTitle}>{data.title}</h1>
             <div className="contact-social col s1">
               <div className="contact-social-icons twitter">
                 <a href="https://twitter.com/CayanGroup_tr" target="_blank" rel="noopener noreferrer">
@@ -115,26 +134,35 @@ class Getintouch extends Component {
             </div>
 
             <div className="contact-input col s12 l4" >
-              <h5>Get in touch</h5>
-              <p>please fill the form and we will contact you during work hours.</p>
+              <h5 className={data.classTitle}>{data.getInTouch}</h5>
+              <p className={data.classTitle}>{data.getInTouchP}</p>
 
               <form onSubmit={this.handleSubmit}>
-               <div className="input-field">
-
+               <div className={"input-field " + data.classInput}>
+                <p className={"label " + data.classTitle} >{data.name}</p>
                 <input className="validate" type="text" name="name" placeholder="" onChange={this.handleNameChange} required/>
 
               </div>
 
-              <div className="input-field">
-
-                <input className="validate" type="text" name="email" placeholder="" onChange={this.handleEmailChange} required/>
-
-              </div>
-              <div className="input-field">
-
-                <input className="validate" type="text" name="phone" placeholder="" onChange={this.handlePhoneChange} required/>
+              <div className={"input-field " + data.classInput}>
+                <p className={"label " + data.classTitle} >{data.email}</p>
+                <input className="validate" type="email" name="email" placeholder="" onChange={this.handleEmailChange} required/>
 
               </div>
+              <div className={"input-field "   + data.classInput}>
+                <div className="row">
+                  <p className={"label " + data.classTitle}>{data.number}</p>
+                </div>
+                <ReactTelInput
+                className={data.classInput}
+                  defaultCountry='tr'
+                  flagsImagePath= 'flags.png'
+                  preferredCountries={['tr', 'sa', 'ae','kw','qa','om','bh','eg','jo','lb','dz','ma','ly','sy']}
+                  onChange={this.handleInputChange}
+                />
+
+              </div>
+
                 <button className="btn waves-effect waves-light" type="submit">send</button>
               </form >
 

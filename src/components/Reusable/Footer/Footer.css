@@ -18,6 +18,11 @@
       .page-footer .footer-nav li a {
         color: #fff;
         letter-spacing: 0.3em; }
+        .page-footer .footer-nav li a.footerNavAr {
+          letter-spacing: 0;
+          font-family: "JFLight", sans-serif; }
+          .page-footer .footer-nav li a.footerNavAr.selected {
+            font-family: "JFRegular", sans-serif; }
         .page-footer .footer-nav li a.selected {
           font-weight: 600; }
           .page-footer .footer-nav li a.selected::after {
@@ -37,5 +42,7 @@
   .page-footer p {
     color: #F0F0F0;
     font-weight: 100; }
+    .page-footer p.footerNavAr {
+      font-family: "JFLight", sans-serif; }
 
 /*# sourceMappingURL=Footer.css.map */

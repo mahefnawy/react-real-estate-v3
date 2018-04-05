@@ -1,18 +1,4 @@
 
-.cayan
-  position: fixed
-  left: -30%
-  margin: 0
-  top: -5%
-  bottom: 0
-  padding: 0
-  z-index: -30
-  font-size: 13em
-  color: rgba(0,0,0,0.09)
-  transform: rotate(90deg)
-  display: none
-  @media (max-width: 1200px)
-    display: none
 .projects-hero-carousel-mobile
   display: none
 .projects-hero-carousel
@@ -36,19 +22,37 @@
     transform: translateX(-50%)
     height: 210px
     text-align: center
+    &.titleAr
+      bottom: 40px
+      h1
+        font-family: 'JFRegular', sans-serif
+
     h1
       padding: 0
       margin: 50px 0 0 0
       color: #fff
       font-size: 12em
-@media (max-width: 992px)
+      font-weight: 800
+@media (max-width: 550px)
   .projects-hero-carousel
     width: 100%
-    // background-image: url('../assets/images/projects/_projects-hero-sm.jpg')
     .container
       // position: relative
-      // top: 5%
+      bottom: 50px
       height: 100px
+
       h1
         // display: none
-        font-size: 4.5em
+        font-size: 5.5em !important
+@media (min-width: 551px) and (max-width: 992px)
+  .projects-hero-carousel
+    width: 100%
+    .container
+      // position: relative
+      bottom: 50px
+      height: 100px
+      &.titleAr
+        bottom: 80px
+      h1
+        // display: none
+        font-size: 8.5em !important

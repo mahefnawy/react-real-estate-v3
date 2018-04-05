@@ -10,7 +10,7 @@ class Header extends Component {
           <nav className="home-page-nav">
             <div className="center nav-wrapper">
               <a href="#!" className="brand-logo"><img className="responsive-img follow2 follow" src="https://res.cloudinary.com/cayangroup9292/image/upload/v1521832676/nav/home-page-logo.png" alt="cayan group logo"/></a>
-              <ul className=" hide-on-med-and-down">
+              <ul className={"hide-on-med-and-down "+ data.class}>
                 <li className="active">{data.home}<a href="/"></a></li>
                 <li><a href="/projects">{data.projects}</a></li>
                 <li><a href="/services">{data.services}</a></li>
@@ -19,16 +19,11 @@ class Header extends Component {
               </ul>
             </div>
           </nav>
-          <ul className="right hide-on-med-and-down language language-home">
-            <li className="dropdown-button right" href="#dropdown2" data-activates="dropdown2"><i className="material-icons right">arrow_drop_down</i><a className="language-a">EN</a></li>
-            <li className="right">
-              <p>CALL US: +905061162526</p>
-            </li>
-          </ul>
+
           <div className="hero-text">
             <img className="responsive-img" src="assets/images/home-page/home-page-logo.png" alt="" />
-            <h3 className="">{data.titleSub}</h3>
-            <h1 className="follow1 follow">{data.titleMain}</h1>
+            <h3 className={data.classTitle}>{data.titleSub}</h3>
+            <h1 className={"follow1 follow " + data.classTitle}><span className={data.classSpan}>{data.titleMain1}</span >{data.titleMain2}<span className={data.classSpan}>{data.titleMain3}</span></h1>
           </div>
       </div>
 

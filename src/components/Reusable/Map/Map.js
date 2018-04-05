@@ -9,7 +9,7 @@ class Map extends Component {
     static defaultProps = {
     center: {lat: 41.016431,lng: 28.653232},
     zoom: 15,
-    // styles: {mapStyles}
+    
 
 
   };

@@ -30,8 +30,8 @@ class Home extends Component {
                   <ProjectsCarousel data={content.page.Home.ProjectsCarousel}/>
                   <Whyus data={content.page.Home.whyus}/>
                   <Testimonial />
-                  <Getintouch />
-                  <Footer />
+                  <Getintouch data={content.page.getintouch}/>
+                  <Footer data={content.page.footer}/>
                 </div>
               )
         } else {

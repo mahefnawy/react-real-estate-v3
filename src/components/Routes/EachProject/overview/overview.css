@@ -4,6 +4,11 @@
   .overview .description {
     padding: 50px 0; }
     .overview .description p {
-      color: #fff; }
+      color: #fff;
+      display: none; }
+      .overview .description p.infoTextEn {
+        display: block; }
+      .overview .description p.infoTextAr {
+        display: block; }
 
 /*# sourceMappingURL=overview.css.map */

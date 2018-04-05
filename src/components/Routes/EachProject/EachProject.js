@@ -29,6 +29,7 @@ class EachProject extends Component {
   render() {
     const content = this.props.content;
     const switchLanguage = this.props.switchLanguage;
+    const data = content.page.eachProject
     const product = find(PRODUCTS, { id: this.props.match.params.id });
     const currentProduct = product;
 
@@ -40,9 +41,9 @@ class EachProject extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div >
         <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
-          <section className={"header col s12 cayan-"+ currentProduct.id}>
+          <section className={"header col s12 cayan-"+ currentProduct.id} >
             <div className="project-code">
               <h3 id="product-code">CAYAN{currentProduct.id}</h3>
             </div>
@@ -52,48 +53,53 @@ class EachProject extends Component {
                   <div className="image col s12 location-icons">
                   </div>
                   <div className="text col s12">
-                    <p>Location</p>
-                    <p>{currentProduct.location}</p>
+                    <p>{data.location}</p>
+                    <p className={data.classInfoEn}>{currentProduct.location}</p>
+                    <p className={data.classInfoAr}>{currentProduct.locationAr}</p>
                   </div>
                 </div>
                 <div className="project-details-each col s4 l4">
                   <div className="image col s12 delivery-icons">
                   </div>
                   <div className="text col s12">
-                    <p>Delivery</p>
-                    <p>{currentProduct.deliveryDate}</p>
+                    <p>{data.delivery}</p>
+                    <p className={data.classInfoEn}>{currentProduct.deliveryDate}</p>
+                    <p className={data.classInfoAr}>{currentProduct.deliveryDateAr}</p>
                   </div>
                 </div>
                 <div className="project-details-each col s4 l4">
                   <div className="image col s12 type-icons">
                   </div>
                   <div className="text col s12">
-                    <p>Type</p>
-                    <p>{currentProduct.typesAll}</p>
+                    <p>{data.type}</p>
+                    <p className="nutural">{currentProduct.typesAll}</p>
                   </div>
                 </div>
                 <div className="project-details-each col s4 l4">
                 <div className="image col s12 area-icons">
                 </div>
                 <div className="text col s12">
-                  <p>Area</p>
-                  <p>{currentProduct.area}</p>
+                  <p>{data.area}</p>
+                  <p className="nutural">{currentProduct.area}</p>
                 </div>
               </div>
                 <div className="project-details-each col s4 l4">
                 <div className="image col s12 installments-icons">
                 </div>
                 <div className="text col s12">
-                  <p>Installments</p>
+                  <p>{data.installments}</p>
                   <p>{currentProduct.installment}</p>
+                  <p className={data.classInfoEn}>{currentProduct.installment} months installments</p>
+                  <p className={data.classInfoAr}> شهر تقسيط {currentProduct.installment}</p>
                 </div>
               </div>
                 <div className="project-details-each col s4 l4">
                 <div className="image col s12 status-icons">
                 </div>
                 <div className="text col s12">
-                  <p>Status</p>
-                  <p>{currentProduct.status}</p>
+                  <p>{data.status}</p>
+                  <p className={data.classInfoEn}>{currentProduct.status}</p>
+                  <p className={data.classInfoAr}>{currentProduct.statusAr}</p>
                 </div>
               </div>
               </div>
@@ -103,11 +109,12 @@ class EachProject extends Component {
           <div className="container">
             <div className="row">
               <div className="text">
-                <h2>OVERVIEW</h2>
+                <h2 className={data.classTitle}>{data.overview}</h2>
                 <hr/>
               </div>
               <div className="description">
-                <p>{currentProduct.description}</p>
+                <p className={data.classInfoEn}>{currentProduct.description}</p>
+                <p className={data.classInfoAr}>{currentProduct.descriptionAr}</p>
               </div>
 
             </div>
@@ -118,7 +125,7 @@ class EachProject extends Component {
               <div className="container">
                 <div className="row">
                   <div className="text">
-                    <h2>PHOTO TOUR</h2>
+                    <h2 className={data.classTitle}>{data.photo}</h2>
                     <hr/>
                   </div>
                   <div className="images col s12">
@@ -141,7 +148,7 @@ class EachProject extends Component {
                 <div className="container">
                   <div className="row">
                     <div className="text">
-                      <h2>PRIVILEGES</h2>
+                      <h2 className={data.classTitle}>{data.privileges}</h2>
                       <hr />
                     </div>
                     <div className="privilages-each col s12 m6 l3">
@@ -149,7 +156,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>GREEN AREAS</p>
+                        <p>{data.parks}</p>
                         <hr />
                       </div>
                     </div>
@@ -158,7 +165,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>FAMILY FRIENDLY</p>
+                        <p>{data.family}</p>
                         <hr />
                       </div>
                     </div>
@@ -167,7 +174,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>SWIMMIN POOL</p>
+                        <p>{data.pool}</p>
                         <hr />
                       </div>
                     </div>
@@ -176,7 +183,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>SECURITY</p>
+                        <p>{data.security}</p>
                         <hr />
                       </div>
                     </div>
@@ -185,7 +192,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>CAFES</p>
+                        <p>{data.cafes}</p>
                         <hr />
                       </div>
                     </div>
@@ -194,7 +201,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>RESTURANTS</p>
+                        <p>{data.resturants}</p>
                         <hr />
                       </div>
                     </div>
@@ -203,7 +210,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>FITNESS CENTER</p>
+                        <p>{data.fitness}</p>
                         <hr />
                       </div>
                     </div>
@@ -212,7 +219,7 @@ class EachProject extends Component {
 
                       </div>
                       <div className="text-each">
-                        <p>HIKING TRAILS</p>
+                        <p>{data.trails}</p>
                         <hr />
                       </div>
                     </div>
@@ -223,7 +230,7 @@ class EachProject extends Component {
                 <div className="container">
                   <div className="row">
                     <div className="text">
-                      <h2>FLOORPLANS & APARTMENT TYPES</h2>
+                      <h2 className={data.classTitle}>{data.plans}</h2>
                       <hr/>
                     </div>
                     <Tabs>
@@ -248,7 +255,7 @@ class EachProject extends Component {
                         </div>
                         <a href="#contact-section">
                           <button type="button" name="button">
-                              ENQUIRE ABOUT THIS APARTMENT
+                              {data.button}
                           </button>
                         </a>
                       </div>
@@ -263,22 +270,22 @@ class EachProject extends Component {
                   <div className="container">
                     <div className="row">
                       <div className="text">
-                        <h2>LOCATION & NEARBY PLACES</h2>
+                        <h2 className={data.classTitle}>{data.nearBy}</h2>
                         <hr/>
                       </div>
                       <div className="tabs col s12 row">
                         <ul>
                           <li>
                             <div className="airport"></div>
-                            <p>ATATURK AIRPORT</p>
+                            <p>{data.ataturk}</p>
                           </li>
                           <li>
                             <div className="airport"></div>
-                            <p>NEW AIRPORT</p>
+                            <p>{data.airport}</p>
                           </li>
                           <li>
                             <div className="taksim"></div>
-                            <p>TAKSIM</p>
+                            <p>{data.taksim}</p>
                           </li>
 
                         </ul>
@@ -290,8 +297,8 @@ class EachProject extends Component {
 
                   </div>
                 </section>
-                <Getintouch />
-                <Footer />
+                <Getintouch data={content.page.getintouch}/>
+                <Footer data={content.page.footer}/>
                 <Action />
       </div>
     );

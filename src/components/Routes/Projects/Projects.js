@@ -23,10 +23,10 @@ class Projects extends Component {
       <div className="">
         <Action />
         <Navbar data={content.page.navbar} switchLanguage={switchLanguage}/>
-        <Header data={content.page.header}/>
-        <ProjectsPage/>
-        <Getintouch />
-        <Footer />
+        <Header data={content.page.projects}/>
+        <ProjectsPage data={content.page.Home.ProjectsCarousel}/>
+        <Getintouch data={content.page.getintouch}/>
+        <Footer data={content.page.footer}/>
       </div>
     )
   } else {

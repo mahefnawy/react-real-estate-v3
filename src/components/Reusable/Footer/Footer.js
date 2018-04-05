@@ -4,6 +4,7 @@ import './Footer.css';
 
 class Footer extends Component {
   render() {
+    const data = this.props.data;
     return (
         <footer className="page-footer">
           <div className="container">
@@ -13,19 +14,19 @@ class Footer extends Component {
               <ul className="footer-nav center ">
 
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link" exact to="/">HOME</NavLink>
+                  <NavLink activeClassName="selected" className={"nav-link " + data.classNav} exact to="/">{data.home}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/projects">PROJECTS</NavLink>
+                  <NavLink activeClassName="selected" className={"nav-link " + data.classNav}  to="/projects">{data.projects}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/services">SERVICES</NavLink>
+                  <NavLink activeClassName="selected" className={"nav-link " + data.classNav}  to="/services">{data.services}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/about">ABOUT</NavLink>
+                  <NavLink activeClassName="selected" className={"nav-link " + data.classNav}  to="/about">{data.about}</NavLink>
                 </li>
                 <li className="link-wrapper">
-                  <NavLink activeClassName="selected" className="nav-link"  to="/contact">CONTACT</NavLink>
+                  <NavLink activeClassName="selected" className={"nav-link " + data.classNav}  to="/contact">{data.contact}</NavLink>
                 </li>
 
               </ul>
@@ -37,7 +38,7 @@ class Footer extends Component {
                   <a className="bg-linkedin" href="https://www.linkedin.com/in/cayan-group-490441113/"><i className="ion-social-linkedin"></i></a>
                   <a className="bg-instagram" href="https://www.instagram.com/cayangroup_tr/"><i className="ion-social-instagram-outline"></i></a>
                 </ul>
-                <p>&copy; Cayan Group Real Estate 2018</p>
+                <p className={data.classNav}>{data.copyrights}</p>
               </div>
             </div>
           </div>

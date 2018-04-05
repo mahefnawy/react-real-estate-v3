@@ -1,24 +1,3 @@
-.company-intro {
-  margin-top: 10vh;
-  text-align: center; }
-  .company-intro h4 {
-    margin-bottom: 50px; }
-  .company-intro p {
-    margin: auto;
-    width: 50%;
-    max-width: 80%;
-    font-size: 0.9em;
-    line-height: 3vh; }
-  .company-intro .company-info-icons {
-    margin-top: 60px;
-    transition: all 0.3s; }
-    .company-intro .company-info-icons img {
-      width: 10vh;
-      height: auto; }
-    .company-intro .company-info-icons h5 {
-      font-size: 0.9em;
-      font-weight: 600; }
-
 .services-section {
   position: relative;
   width: 100%;
@@ -37,6 +16,9 @@
       letter-spacing: 0.7em;
       font-weight: 400;
       margin-top: 0; }
+      .services-section .services-section-bg h1.servicesTitleAr {
+        letter-spacing: 0 !important;
+        font-family: "JFRegular", sans-serif; }
     .services-section .services-section-bg hr {
       height: 3px;
       width: 10%;
@@ -77,12 +59,20 @@
           left: 0; }
         .services-section .services-section-front .services-section-each .services-text h5 {
           letter-spacing: 0.2em; }
+          .services-section .services-section-front .services-section-each .services-text h5.text-direction {
+            letter-spacing: 0 !important;
+            font-family: "JFRegular", sans-serif; }
         .services-section .services-section-front .services-section-each .services-text p {
           margin-top: 20px;
           color: #fff;
           opacity: 0.6;
           line-height: 1.7em;
           font-weight: 100; }
+          .services-section .services-section-front .services-section-each .services-text p.text-direction {
+            direction: rtl;
+            text-align: right !important;
+            letter-spacing: 0 !important;
+            font-family: "JFLight", sans-serif; }
       .services-section .services-section-front .services-section-each .services-img {
         height: 100%;
         width: 50%;
@@ -128,17 +118,19 @@
 
 @media (max-width: 992px) {
   .services-section {
-    height: 180vh; }
+    height: 130vh; }
     .services-section .services-section-bg {
       width: 75vw;
-      top: -15%; }
+      top: -45%;
+      height: 150%; }
       .services-section .services-section-bg h1 {
         letter-spacing: 0.2em !important;
         font-size: 1.4em; }
       .services-section .services-section-bg hr {
         width: 30%; }
     .services-section .services-section-front {
-      width: 90vw !important; }
+      width: 90vw !important;
+      top: -35%; }
       .services-section .services-section-front .services-section-each {
         width: 100% !important;
         margin-bottom: 30px !important; }

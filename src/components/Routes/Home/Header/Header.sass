@@ -1,3 +1,4 @@
+
 .home-page-header
   height: 100vh
   position: relative
@@ -89,12 +90,27 @@
       text-align: center
       padding: auto
       margin-bottom: 20px
+      &.headerNav
+        flex-direction: row-reverse !important
+        li
+          &.active
+            font-family: 'JFLight', sans-serif
+          a
+            font-family: 'JFLight', sans-serif
+            &.selected
+              font-family: 'JFRegular', sans-serif
+
+        li
+          a
+            letter-spacing: 0
+
+
       li
         margin: 0 2px
         background: none
 
         a
-          // letter-spacing: 0.2em
+          letter-spacing: 0.2em
           font-size: 0.9em
           font-weight: 100
           max-height: 50px
@@ -138,12 +154,21 @@
       display: none
     h3
       font-weight: 100
+      &.titleAr
+        font-family: 'DroidKufiRegular',sans-serif
     h1
       font-weight: 800
       font-size: 8em
       text-shadow: 9px 8px 20px rgba(0,0,0,0.38)
       margin: 0
       padding: 0
+      span
+        font-weight: 800
+      &.titleAr
+        font-family: 'DroidKufiBold',sans-serif
+        span
+          font-family: 'DroidKufiBold',sans-serif
+          color: #D2A63E
 
 @media (max-width: 992px)
   .home-page-header
@@ -178,12 +203,12 @@
             background-color: #CDA036
             a
               font-weight: 400
-              // letter-spacing: 0.5em 
+              letter-spacing: 0.5em
                 font-size: 1.1em
           a
             color: #fff
             font-size: 1em
-            // letter-spacing: 0.2em
+            letter-spacing: 0.2em
             font-weight: 200
     .button-collapse
       margin-top: -8px

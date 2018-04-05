@@ -1,13 +1,37 @@
+@font-face {
+    font-family: JFLight;
+    src: url('fonts/JF-Flat-light.woff') format('woff'),url('fonts/JF-Flat-light.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: JFRegular;
+    src: url('fonts/JF-Flat-regular.woff') format('woff'),url('fonts/JF-Flat-regular.ttf') format('truetype');
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   margin: 0;
   padding: 0;
 }
+html {
+  width: 100%;
+}
+
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   height: 100%;
   overflow: auto;
+}
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+  width: 100%
 }

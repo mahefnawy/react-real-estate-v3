@@ -3,21 +3,51 @@ import { bubble as Menu } from 'react-burger-menu'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css';
 import '../../../data/content.json'
-const Provider = require('react-redux').Provider;
-const createStore = require('redux').createStore;
+
 const content = require('../../../reducer');
 
 class Navbar extends Component {
+      constructor(props){
+      super(props);
+      this.state={isHide:true};
+      this.hideBar = this.hideBar.bind(this)
+    }
+    hideBar(){
+       let {isHide} = this.state
+
+       
+       if ( window.scrollY === 0 ){
+         !isHide && this.setState({isHide:true})
+
+       } else{
+         isHide && this.setState({isHide:false})
+
+       }
+
+
+
+
+
+       this.prev = window.scrollY;
+    }
+    componentDidMount(){
+        window.addEventListener('scroll',this.hideBar);
+    }
+    componentWillUnmount(){
+         window.removeEventListener('scroll',this.hideBar);
+    }
   showSettings (event) {
     event.preventDefault();
   }
 
   render() {
+    let classHide=this.state.isHide?"hide":""
+
         const data = this.props.data;
         let switchLanguage = this.props.switchLanguage;
     return (
       <div>
-        <i onClick={ this.showSettings } className="material-icons sidenav-trigger right">menu</i>
+        <i onClick={ this.showSettings } className="material-icons sidenav-trigger right"></i>
         <Menu >
           <img className="sidenav-logo" src="https://res.cloudinary.com/dd5e5iszi/image/upload/v1522222933/other/home-page-logo.png" alt="cayan group logo"/>
           <li className="link-wrapper">
@@ -37,12 +67,12 @@ class Navbar extends Component {
           </li>
 
         </Menu>
-        <div className="navbar-fixed">
+        <div className={"navbar-fixed " + classHide}>
           <nav className="normal-nav">
             <div className="nav-wrapper">
-              <a href="index.html" className="brand-logo"><img className="responsive-img" src="https://res.cloudinary.com/dd5e5iszi/image/upload/v1522221061/other/logo-nav.png" alt="cayan group logo"/></a>
+              <a href="/" className="brand-logo"><img className="responsive-img" src="https://res.cloudinary.com/dd5e5iszi/image/upload/v1522221061/other/logo-nav.png" alt="cayan group logo"/></a>
 
-              <ul className="nav-links center hide-on-med-and-down">
+              <ul className={"nav-links center hide-on-med-and-down " + data.class}>
 
                 <li className="link-wrapper">
                   <NavLink activeClassName="selected" className="nav-link" exact to="/">{data.home}</NavLink>

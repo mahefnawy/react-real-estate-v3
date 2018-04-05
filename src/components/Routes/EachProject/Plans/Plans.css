@@ -64,7 +64,8 @@
           background-color: #CDA036;
           color: #fff;
           margin-top: 20px;
-          padding: 30px; }
+          padding: 30px;
+          cursor: pointer; }
 
 @media (max-width: 992px) {
   .plans .react-tabs .react-tabs__tab-panel {

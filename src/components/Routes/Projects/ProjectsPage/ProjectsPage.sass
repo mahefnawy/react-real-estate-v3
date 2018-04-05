@@ -1,166 +1,241 @@
+
 .projects-page
   //height: 700px
   background-color: #fff
+  .container
+    .row
+      .projectsPage-wrapper
+        position: relative
+        //width: 100% !important
+        height: 100% !important
 
-  .wrapper
-    float: left
-    background-color: blue
-    width: 350px
-    height: 520px
-    border: 1px solid rgba(0,0,0,0.2)
-    background-color: #fff
-    margin: 40px 40px 10px 40px
-    padding: 0 !important
-    border-radius: 30px
-    overflow: hidden
-    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2)
-    position: relative !important
-
-    .carouselImages
-      position: relative
-      width: 100%
-      height: 250px
-      background:
-        position: center
-        size: cover
-      h6
-        background-color: rgba(0,0,0,0.3)
-        margin: 0
-        position: absolute
-        bottom: 7px
-        left: 7px
-        color: #fff
-        font-size: 1.5em
-        font-family: 'Oswald', sans-serif
-      &.cayan-124
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522314639/projects/cayan-124/carousel-cayan-124.jpg')
-      &.cayan-107
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522314821/projects/cayan-107/carousel-cayan-107.jpg')
-      &.cayan-11
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522322995/carousel/cayan-11.jpg')
-      &.cayan-15
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323549/carousel/caya-15.jpg')
-      &.cayan-101
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323765/carousel/cayan-101.jpg')
-      &.cayan-100
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323968/carousel/cayan-100.jpg')
-      &.cayan-128
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153915/projects/cayan-128/9.jpg')
-      &.cayan-139
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522154035/projects/cayan-139/3.jpg')
-      &.cayan-106
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153767/projects/cayan-106/cayan-106.jpg')
-      &.cayan-115
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522248171/projects/cayan-115/2.jpg')
-      &.cayan-112
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153819/projects/cayan-112/8.jpg')
-      &.cayan-138
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522154000/projects/cayan-138/4.jpg')
-      &.cayan-127
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153891/projects/cayan-127/6.jpg')
-      &.cayan-132
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153942/projects/cayan-132/5.jpg')
-      &.cayan-103
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152825/projects/cayan-103/4.jpg')
-      &.cayan-97
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152765/projects/cayan-97/cayan-97.jpg')
-      &.cayan-41
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152716/projects/cayan-41/11.jpg')
-      &.cayan-4
-        background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152634/projects/cayan-4/2.jpg')
-
-    .description
-      position: relative
-
-      // background-color: #fff
-      padding: 10px
-      border-bottom: 1px solid rgba(0,0,0,0.2)
-      box-shadow: 0px #fff
-      height: 100px
-
-      h6
-        font-size: 1em
-        color: #222222
-        display: inline
-      h5
-        font-size: 1.3em
-        color: #CDA036
-        font-family: 'Oswald', sans-serif
-        display: inline
-        position: absolute
-        right: 10px
-        margin: 0
-      p
-        font-size: 0.8em
-        line-height: 1.2em
-        margin-top: 10px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        // align-items: center
+        .wrapper
+          float: left !important
+          background-color: blue
+          width: 350px
+          height: 520px
+          border: 1px solid rgba(0,0,0,0.2)
+          background-color: #fff
+          margin: 20px auto
+          padding: 0 !important
+          border-radius: 30px
+          overflow: hidden
+          box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2)
+          position: relative !important
+          transition: all .1s ease-in-out
+          transform: scale(1)
 
 
-    .project-info
-      width: 100%
-      border-bottom: 1px solid rgba(0,0,0,0.2)
-      height: 100px
-      .project-info-icons
-        width: 50%
-        height: 100%
-        padding-left: 5px
-        border-right: 1px solid rgba(0,0,0,0.2)
-        // border-bottom: 1px solid rgba(0,0,0,0.2)
-        &.right
-          border-right: none
-          padding-left: 5px
-        i
-          display: inline
-          color: #222222
+          &:hover
+            transform: scale(1.025)
 
-        p
-          display: inline
-          font-size: 0.7em
-          margin-left: 5px
-          font-weight: 500
-    .more-details
-      position: relative
-      left: 50%
-      transform: translateX(-50%)
-      bottom: 0
-      background-color: #222222
-      color: #fff
-      font-size: 0.8em
-      font-weight: 300
-      font-family: 'Oswald', sans-serif
-      padding: 10px
-      border: none
-      width: 120px
-      border-radius: 30px
-      margin-top: 10px
-@media (max-width: 700px)
-  .wrapper
-    margin: 10px !important
-    width: 95% !important
-@media (min-width: 701px) and (max-width: 1100px)
-  .projects-page
-    margin-top: 70px
-    .container
-      width: 100%
-      .row
 
-      .wrapper
-        margin: 14px 18px !important
-        width: 45% !important
-// @media (min-width: 993px) and (max-width: 1100px)
-//   .projects-page
-//     margin-top: 70px
-//     .container
-//       width: 100%
-//       .row
-//       .wrapper
-//         margin: 14px 18px !important
-//         width: 45% !important
-@media (min-width: 1101px) and (max-width: 1300px)
+
+          .carouselImages
+            position: relative
+            width: 100%
+            height: 250px
+            background:
+              position: center
+              size: cover
+            h6
+              background-color: rgba(0,0,0,0.3)
+              margin: 0
+              position: absolute
+              bottom: 7px
+              left: 7px
+              color: #fff
+              font-size: 1.5em
+              font-family: 'Oswald', sans-serif
+            &.cayan-124
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522314639/projects/cayan-124/carousel-cayan-124.jpg')
+            &.cayan-107
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522314821/projects/cayan-107/carousel-cayan-107.jpg')
+            &.cayan-11
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522322995/carousel/cayan-11.jpg')
+            &.cayan-15
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323549/carousel/caya-15.jpg')
+            &.cayan-101
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323765/carousel/cayan-101.jpg')
+            &.cayan-100
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/v1522323968/carousel/cayan-100.jpg')
+            &.cayan-128
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153915/projects/cayan-128/9.jpg')
+            &.cayan-139
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522154035/projects/cayan-139/3.jpg')
+            &.cayan-106
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153767/projects/cayan-106/cayan-106.jpg')
+            &.cayan-115
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522248171/projects/cayan-115/2.jpg')
+            &.cayan-112
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153819/projects/cayan-112/8.jpg')
+            &.cayan-138
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522154000/projects/cayan-138/4.jpg')
+            &.cayan-127
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153891/projects/cayan-127/6.jpg')
+            &.cayan-132
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522153942/projects/cayan-132/5.jpg')
+            &.cayan-103
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152825/projects/cayan-103/4.jpg')
+            &.cayan-97
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152765/projects/cayan-97/cayan-97.jpg')
+            &.cayan-41
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152716/projects/cayan-41/11.jpg')
+            &.cayan-4
+              background-image: url('https://res.cloudinary.com/dd5e5iszi/image/upload/c_scale,w_500/v1522152634/projects/cayan-4/2.jpg')
+
+          .description
+            position: relative
+
+            // background-color: #fff
+            padding: 10px
+            border-bottom: 1px solid rgba(0,0,0,0.2)
+            box-shadow: 0px #fff
+            height: 110px
+
+            h6
+              font-size: 1em
+              color: #222222
+              display: inline
+              &.arabicTitle
+                text-align: right
+                direction: rtl
+                margin: 0
+                font-family: 'JFRegular', sans-serif
+            h5
+              font-size: 1.3em
+              color: #CDA036
+              font-family: 'Oswald', sans-serif
+              display: inline
+              position: absolute
+              right: 10px
+              margin: 0
+              &.priceClass
+                left: 10px
+            p
+              font-size: 0.8em
+              line-height: 1.2em
+              margin-top: 10px
+              display: none
+              &.descriptionEn
+                display: block
+              &.descriptionAr
+                margin-top: 30px
+                display: block
+                text-align: right
+                direction: rtl
+                line-height: 1.4em
+                font-family: 'JFRegular', sans-serif
+
+
+          .project-info
+            width: 100%
+            border-bottom: 1px solid rgba(0,0,0,0.2)
+            height: 90px
+            .project-info-icons
+              width: 50%
+              height: 100%
+              padding-left: 5px
+              border-right: 1px solid rgba(0,0,0,0.2)
+              &:nth-child(2)
+                border-right: none
+
+
+              &.iconsAr
+                text-align: right
+              &.right
+                border-right: none
+                padding-left: 5px
+              i
+                display: inline
+                color: #222222
+
+              p
+                display: inline
+                font-size: 0.7em
+                margin-left: 5px
+                font-weight: 500
+                display: none
+                &.nutural
+                  display: inline
+                &.classEn
+                  display: inline
+                &.classAr
+                  display: inline
+                  font-family: 'JFRegular', sans-serif
+          .more-details
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+            background-color: #222222
+            color: #fff
+            font-size: 0.8em
+            font-weight: 300
+            font-family: 'Oswald', sans-serif
+            padding: 10px
+            border: none
+            width: 120px
+            border-radius: 30px
+            margin-top: 10px
+            &.carouselTitleAr
+              font-family: 'JFRegular', sans-serif
+
+
+@media (max-width: 799px)
   .projects-page
     margin-top: 70px
     .container
       width: 80%
+      .row
+        .projectsPage-wrapper
+          display: block !important
+          .wrapper
+            left: 50%
+            transform: translateX(-50%)
+            //margin: 10px !important
+            width: 320px !important
+
+@media (min-width: 800px) and (max-width: 992px)
+  .wrapper
+    margin: 10px !important
+    width: 320px !important
+@media (min-width: 993px) and (max-width: 1200px)
+  .projects-page
+    margin-top: 70px
+    .container
+      width: 80%
+      .row
+        .projectsPage-wrapper
+          display: block !important
+          .wrapper
+            left: 20%
+            transform: translateX(-25%)
+            margin: 10px !important
+            width: 320px !important
+
+@media (min-width: 1201px) and (max-width: 1600px)
+  .projects-page
+    margin-top: 70px
+    .container
+      width: 85%
+      .projectsPage-wrapper
+        // position: relative
+        // left: 50%
+        // transform: translateX(-50%)
+        // width: 100%
+        // height: 100%
+        //
+        // background-color: red
       .wrapper
         width: 320px !important
         margin: 10px !important
+        // left: 50%
+        // transform: translateX(-50%)
+        .description
+          h5
+            font-size: 1.1em
