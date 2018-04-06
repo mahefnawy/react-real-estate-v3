@@ -15,6 +15,8 @@ const products = [{
     "deliveryDate": "Ready",
     "deliveryDateAr": "جاهز",
     "downPayment": "15",
+    "lat": 40.204058,
+    "lng": 28.968732,
     "types": [
       {
       "type": "1+1",
@@ -83,6 +85,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "35",
+    "lat":   41.019482,
+    "lng": 28.551043,
     "types": [
       {
         "type": "1+1",
@@ -160,6 +164,8 @@ const products = [{
     "deliveryDate": "2018,2020",
     "deliveryDateAr": "2018,2020",
     "downPayment": "25",
+    "lat":   40.967412,
+    "lng": 28.626802,
     "types": [
       {
         "type": "1+1",
@@ -251,6 +257,8 @@ const products = [{
     "deliveryDate": "2018,2019",
     "deliveryDateAr": "2018,2019",
     "downPayment": "20",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "1+1",
@@ -305,6 +313,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "50",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "1+1",
@@ -366,6 +376,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "35",
+    "lat": 41.046885,
+    "lng": 28.934333,
     "types": [
       {
         "type"  : "1+0",
@@ -429,6 +441,8 @@ const products = [{
     "deliveryDate": "2018",
     "deliveryDateAr": "2018",
     "downPayment": "30",
+    "lat": 41.079502,
+    "lng": 28.683707,
     "types": [
       {
         "type": "1+1",
@@ -487,6 +501,8 @@ const products = [{
     "deliveryDate": "Ready",
     "deliveryDateAr": "جاهز",
     "downPayment": "50",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "1+1",
@@ -540,6 +556,8 @@ const products = [{
     "deliveryDate": "2020",
     "deliveryDateAr": "2020",
     "downPayment": "15",
+    "lat": 41.068632,
+    "lng": 28.666541,
     "types": [
       {
         "type": "1+1",
@@ -611,6 +629,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "50",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type"  : "1+1",
@@ -673,6 +693,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "25",
+    "lat": 41.074326,
+    "lng": 28.795631,
     "types": [
       {
         "type": "2+1",
@@ -728,6 +750,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "35",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "2+1",
@@ -783,6 +807,8 @@ const products = [{
     "deliveryDate": "Ready",
     "deliveryDateAr": "جاهز",
     "downPayment": "35",
+    "lat": 41.047403,
+    "lng": 28.816917,
     "types": [
       {
         "type": "1+1",
@@ -844,6 +870,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "30",
+    "lat": 41.006222,
+    "lng": 28.702933,
     "types": [
       {
         "type": "1+1",
@@ -905,6 +933,8 @@ const products = [{
     "deliveryDate": "2019",
     "deliveryDateAr": "2019",
     "downPayment": "30",
+    "lat": 41.059054,
+    "lng": 28.816230,
     "types": [
       {
         "type": "1+0",
@@ -976,6 +1006,8 @@ const products = [{
     "deliveryDate": "Ready",
     "deliveryDateAr": "جاهز",
     "downPayment": "30",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "1+1",
@@ -1043,6 +1075,8 @@ const products = [{
     "deliveryDate": "Ready",
     "deliveryDateAr": "جاهز",
     "downPayment": "30",
+    "lat": 41.016431,
+    "lng": 28.653232,
     "types": [
       {
         "type": "1+1",

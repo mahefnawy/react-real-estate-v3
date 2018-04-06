@@ -101,7 +101,7 @@ class Getintouch extends Component {
         <div className="container">
           <div className="row">
             <h1 className={"body-h1 " + data.classTitle}>{data.title}</h1>
-            <div className="contact-social col s1">
+            <div className="contact-social col s1 l1">
               <div className="contact-social-icons twitter">
                 <a href="https://twitter.com/CayanGroup_tr" target="_blank" rel="noopener noreferrer">
                   <i className="ion-social-twitter twitter"></i>
@@ -133,7 +133,7 @@ class Getintouch extends Component {
               </div>
             </div>
 
-            <div className="contact-input col s12 l4" >
+            <div className="contact-input col s12 l7 " >
               <h5 className={data.classTitle}>{data.getInTouch}</h5>
               <p className={data.classTitle}>{data.getInTouchP}</p>
 
@@ -156,7 +156,7 @@ class Getintouch extends Component {
                 <ReactTelInput
                 className={data.classInput}
                   defaultCountry='tr'
-                  flagsImagePath= 'flags.png'
+                  flagsImagePath= 'https://res.cloudinary.com/dd5e5iszi/image/upload/v1522998573/extras/flags.png'
                   preferredCountries={['tr', 'sa', 'ae','kw','qa','om','bh','eg','jo','lb','dz','ma','ly','sy']}
                   onChange={this.handleInputChange}
                 />
@@ -168,7 +168,7 @@ class Getintouch extends Component {
 
               <div className="contact-info">
                 <i className="ion-location left "></i>
-                <p className="">Cumhuriyet Mah. Hürriyet Cd.1979 Sk. no:16 önay garden residence DR:92 Esenyurt.Istanbul</p>
+                <p className="">Cumhuriyet Mah. Hürriyet Cd.1979 Sk. no:16 önay garden residence Esenyurt.Istanbul</p>
                 <br/>
                 <i className="ion-ios-email left "></i>
                 <p className="">info@cayan-group.com</p>

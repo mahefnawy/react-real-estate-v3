@@ -7,41 +7,12 @@ import '../../../data/content.json'
 const content = require('../../../reducer');
 
 class Navbar extends Component {
-      constructor(props){
-      super(props);
-      this.state={isHide:true};
-      this.hideBar = this.hideBar.bind(this)
-    }
-    hideBar(){
-       let {isHide} = this.state
-
-       
-       if ( window.scrollY === 0 ){
-         !isHide && this.setState({isHide:true})
-
-       } else{
-         isHide && this.setState({isHide:false})
-
-       }
-
-
-
-
-
-       this.prev = window.scrollY;
-    }
-    componentDidMount(){
-        window.addEventListener('scroll',this.hideBar);
-    }
-    componentWillUnmount(){
-         window.removeEventListener('scroll',this.hideBar);
-    }
   showSettings (event) {
     event.preventDefault();
-  }
 
+  }
   render() {
-    let classHide=this.state.isHide?"hide":""
+
 
         const data = this.props.data;
         let switchLanguage = this.props.switchLanguage;
@@ -67,7 +38,7 @@ class Navbar extends Component {
           </li>
 
         </Menu>
-        <div className={"navbar-fixed " + classHide}>
+        <div className="navbar-fixed ">
           <nav className="normal-nav">
             <div className="nav-wrapper">
               <a href="/" className="brand-logo"><img className="responsive-img" src="https://res.cloudinary.com/dd5e5iszi/image/upload/v1522221061/other/logo-nav.png" alt="cayan group logo"/></a>
@@ -94,6 +65,7 @@ class Navbar extends Component {
               <ul className="right hide-on-med-and-down language">
                 <li className="dropdown-button right"><a onClick={switchLanguage.bind(this,'en')} className="language-a">Eng</a></li>
                 <li className="dropdown-button right"><a onClick={switchLanguage.bind(this,'ar')} className="language-a">عربي</a></li>
+
                 <li className="right">
                   <p>CALL US: +905061162526</p>
                 </li>

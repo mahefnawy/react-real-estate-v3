@@ -210,5 +210,17 @@
     margin: 5px; }
     .home-page-header .hero-text h1::after {
       display: none; } }
+@media (min-width: 993px) and (max-width: 1275px) {
+  .home-page-header .home-page-nav {
+    display: none;
+    top: 0;
+    width: 100%;
+    background-color: #1D1D1D;
+    height: 40px;
+    left: 0;
+    transform: translateX(0);
+    z-index: 10; }
+    .home-page-header .home-page-nav .brand-logo {
+      top: -25vh; } }
 
 /*# sourceMappingURL=Header.css.map */

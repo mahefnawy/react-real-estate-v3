@@ -1,8 +1,7 @@
 .testimonials {
-  margin: 50px auto;
+  margin: 20px auto;
   height: 400px;
   width: 100%;
-  margin-top: 80px;
   position: relative; }
   .testimonials h1::before {
     content: "TESTIMONIALS";

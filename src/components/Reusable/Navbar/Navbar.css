@@ -1,18 +1,20 @@
 .bm-burger-button {
-  display: none;
-  opacity: 0; }
-  .bm-burger-button button {
-    display: none; }
+  display: none; }
 
 .bm-menu {
   display: none; }
 
 .dropdown-content {
-  text-shadow: center; }
+  text-shadow: center;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: red; }
   .dropdown-content li {
     margin: auto;
-    text-shadow: center;
-    padding-left: 20px; }
+    text-shadow: none;
+    padding-left: 20px;
+    border: none !important;
+    box-shadow: none !important; }
 
 .navbar-fixed {
   z-index: 100;
@@ -158,7 +160,9 @@
     padding: 0.8em;
     width: 100% !important;
     text-align: center;
-    font-size: 2em; }
+    font-size: 2em;
+    border: none;
+    box-shadow: none; }
     .bm-item-list li {
       width: 100% !important; }
       .bm-item-list li a {

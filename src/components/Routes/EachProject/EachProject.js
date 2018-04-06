@@ -18,21 +18,31 @@ import PRODUCTS from '../../Data/projects';
 import Slider from 'react-slick'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import GoogleMapReact from 'google-map-react';
 
 let actions = require('../../../actions');
+const AnyReactComponent = ({ marker }) => <img src={'https://res.cloudinary.com/dd5e5iszi/image/upload/v1522930171/map/cayan-map.svg'}/>;
+const AnyReactComponent3 = ({ marker }) => <img src={'https://res.cloudinary.com/dd5e5iszi/image/upload/v1522930183/map/taksim.svg'}/>;
 
-
-
+const AnyReactComponent2 = ({ marker }) => <img src={'https://res.cloudinary.com/dd5e5iszi/image/upload/v1522930182/map/airport.svg'}/>;
 
 
 class EachProject extends Component {
+      static defaultProps = {
+      center: {lat: 41.016431,lng: 28.653232},
+      zoom: 11,
+    };
   render() {
     const content = this.props.content;
     const switchLanguage = this.props.switchLanguage;
     const data = content.page.eachProject
     const product = find(PRODUCTS, { id: this.props.match.params.id });
     const currentProduct = product;
+    const locationLat = product.lat
+    const locationLng = product.lng
 
+    const centerProject = {lat: product.lat,lng: product.lng }
+    
     var settings = {
       dots: false,
       infinite: true,
@@ -273,6 +283,7 @@ class EachProject extends Component {
                         <h2 className={data.classTitle}>{data.nearBy}</h2>
                         <hr/>
                       </div>
+                      {/*
                       <div className="tabs col s12 row">
                         <ul>
                           <li>
@@ -290,11 +301,30 @@ class EachProject extends Component {
 
                         </ul>
                       </div>
-
+*/}
                     </div>
                   </div>
-                  <div className="map  col s12">
+                  <div className="map  col s10">
 
+                    <GoogleMapReact
+                      bootstrapURLKeys={{ key: "AIzaSyCqSra2dJrK9aHJW9sRaHtdkVhx2luhbf0" }}
+                      defaultCenter={centerProject}
+                      defaultZoom={this.props.zoom}
+                    >
+                      <AnyReactComponent
+                        lat={locationLat}
+                        lng={locationLng}
+                      />
+                      <AnyReactComponent2
+                        lat={40.989335}
+                        lng={ 28.802444}
+                      />
+                      <AnyReactComponent3
+                        lat={41.038037}
+                        lng={28.983718}
+
+                      />
+                    </GoogleMapReact>
                   </div>
                 </section>
                 <Getintouch data={content.page.getintouch}/>

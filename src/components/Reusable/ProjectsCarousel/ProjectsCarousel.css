@@ -258,6 +258,10 @@
         .projetcsCarousel .containermy .slick-slider .slick-arrow.slick-next {
           right: -3.5% !important; }
       .projetcsCarousel .containermy .slick-slider .slick-list .wrapper {
-        width: 330px !important; } }
+        width: 330px !important; }
+        .projetcsCarousel .containermy .slick-slider .slick-list .wrapper .description h5 {
+          font-size: 1.2em !important; }
+        .projetcsCarousel .containermy .slick-slider .slick-list .wrapper .description h6 {
+          font-size: 0.9em !important; } }
 
 /*# sourceMappingURL=ProjectsCarousel.css.map */

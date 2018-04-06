@@ -1,4 +1,4 @@
-[{
+const mapStyles = [{
             "elementType": "geometry",
             "stylers": [{
                 "color": "#f5f5f5"
@@ -121,3 +121,4 @@
             }]
         }
     ]
+export default mapStyles;
